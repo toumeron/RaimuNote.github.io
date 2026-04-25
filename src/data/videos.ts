@@ -8,7 +8,7 @@ export type VideoItem = {
 // 動画IDだけ書き換えればOKです。
 export const videos: VideoItem[] = [
   {
-    id: "OaFDqczqecI",
+    id: "2C4Cs6503gw",
     title: "Lime2026",
     description: "LimeNoteの今後の経営方針をご紹介",
   },
