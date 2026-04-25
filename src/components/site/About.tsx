@@ -88,9 +88,9 @@ export const About = () => {
           <div className="md:col-span-5">
             <span className="sticker -rotate-2 mb-6">About us</span>
             <h2 className="reveal font-jp-black text-5xl leading-tight text-foreground md:text-7xl">
-              ことばは、
+              誰でも、
               <br />
-              <span className="text-primary-deep">栄養</span>になる。
+              <span className="text-primary-deep">神</span>になる。
             </h2>
             <p className="reveal mt-6 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg">
               私たち LimeNote 株式会社は、「やさしいインターネット」を信じています。

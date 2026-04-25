@@ -43,7 +43,7 @@ export const Footer = () => {
           <div className="md:col-span-5">
             <Logo variant="light" />
             <p className="mt-5 max-w-xs text-sm text-background/70">
-              LimeNote 株式会社は、SNS「LimeNote」の企画・開発・運営を行う、
+              LimeNoteは、SNS「LimeNote」の企画・開発・運営を行う、
               福岡の小さなテクノロジー会社です。
             </p>
             <ul className="mt-6 flex gap-3">

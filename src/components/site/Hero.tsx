@@ -17,7 +17,7 @@ export const Hero = () => {
         {/* Left text */}
         <div className="md:col-span-7">
           <div className="mb-6 flex flex-wrap items-center gap-3">
-            <span className="sticker -rotate-3">🍋 SNS for everyone</span>
+            <span className="sticker -rotate-3">Lime for browser</span>
             <span className="sticker rotate-2 bg-primary text-primary-foreground">
               全機能、ずっと無料!
             </span>
@@ -34,9 +34,9 @@ export const Hero = () => {
           </h1>
 
           <p className="mt-8 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-            LimeNote(ライムノート)は、毎日の「好き」と「気づき」を軽やかに分かち合うSNS。
+            LimeNoteは近日登場するSNS。
             <br className="hidden md:inline" />
-            やさしいタイムラインで、あなたの声がちゃんと届く場所をつくっています。
+            現在は開発中です。
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -63,10 +63,10 @@ export const Hero = () => {
           <div className="relative mx-auto w-[280px] md:w-[320px]">
             {/* sticker badges */}
             <span className="sticker absolute -left-6 top-10 z-20 -rotate-12 bg-primary text-primary-foreground">
-              NEW! ライムボード
+              NEW!LimeNote
             </span>
             <span className="sticker absolute -right-4 bottom-20 z-20 rotate-6">
-              ❤ 1.3M users
+              ❤ 10+ users
             </span>
 
             {/* phone */}
@@ -85,9 +85,9 @@ export const Hero = () => {
                     </div>
                     <div className="space-y-3">
                       {[
-                        { name: "haru.", text: "今日の朝、空がライム色だった。", lime: 128 },
-                        { name: "midori_", text: "新しいノートを公開しました🌿", lime: 56 },
-                        { name: "yui*", text: "やさしい場所がここにある。", lime: 312 },
+                        { name: "haru.@無料で10億", text: "にゃ〜ん", lime: 128 },
+                        { name: "midori_@年収100億の猫", text: "は？", lime: 56 },
+                        { name: "yui*@年収10億の猫", text: "にゃ〜ん", lime: 312 },
                       ].map((post, i) => (
                         <div
                           key={i}

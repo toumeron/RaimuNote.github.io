@@ -37,18 +37,17 @@ export const Contact = () => {
               ここから。
             </h2>
             <p className="reveal mt-6 text-muted-foreground md:text-lg">
-              サービスへのご質問、取材のご依頼、お仕事のご相談など、
-              どんなことでもお気軽にお声がけください。
+              サービスへのご質問、取材のご依頼、お仕事のご相談などは承っておりません
             </p>
             <div className="reveal mt-8 space-y-3 text-sm">
               <div>
                 <span className="font-bold">Mail:</span>{" "}
                 <a className="underline-offset-4 hover:underline" href="mailto:hello@limenote.example">
-                  hello@limenote.example
+                  停止中
                 </a>
               </div>
               <div>
-                <span className="font-bold">Tel:</span> 03-0000-0000(平日 10:00–18:00)
+                <span className="font-bold">Tel:</span> 停止中
               </div>
             </div>
           </div>

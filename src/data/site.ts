@@ -39,18 +39,18 @@ export const careers: CareerItem[] = [
     emoji: "💻",
     role: "ソフトウェアエンジニア",
     team: "Product / Platform",
-    description: "TypeScript、Go、Kotlinでプロダクトの根幹を一緒に育ててくれる仲間を募集中。",
+    description: "TypeScript、Go、Kotlinでプロダクトの根幹を一緒に育ててくれる仲間を募集していません",
   },
   {
     emoji: "🎨",
     role: "プロダクトデザイナー",
     team: "Design",
-    description: "「やさしい設計」を体現するUIを、リサーチからプロトタイプまで一気通貫で。",
+    description: "募集していません",
   },
   {
     emoji: "🤝",
     role: "コミュニティマネージャー",
     team: "Community",
-    description: "クリエイターとユーザーの声を聞き、LimeNoteの居心地を磨いていくお仕事です。",
+    description: "募集していません",
   },
 ];

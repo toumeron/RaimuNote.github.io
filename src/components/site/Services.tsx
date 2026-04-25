@@ -18,8 +18,7 @@ export const Services = () => {
             </h2>
           </div>
           <p className="reveal max-w-sm text-muted-foreground">
-            ノート投稿から有料メンバーシップ、AIモデレーションまで。
-            やさしさの設計が、すべての機能の根っこにあります。
+            魅力をご紹介
           </p>
         </div>
 
