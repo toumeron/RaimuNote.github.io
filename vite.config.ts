@@ -4,8 +4,8 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  // GitHub Pagesのサブディレクトリ名を指定
-  base: "/RaimuNote.github.io/",
+  // 相対パス './' にすることで、サブディレクトリの影響を無効化します
+  base: "./",
 
   server: {
     host: "::",
