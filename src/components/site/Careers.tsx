@@ -13,8 +13,6 @@ export const Careers = () => {
             <span className="text-primary-deep">育てよう。</span>
           </h2>
           <p className="reveal mt-6 text-muted-foreground md:text-lg">
-            「やさしいインターネット」を本気で信じる仲間を探しています。
-            職種や経験よりも、まずは話してみませんか?
           </p>
         </div>
 

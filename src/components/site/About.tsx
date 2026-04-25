@@ -93,10 +93,7 @@ export const About = () => {
               <span className="text-primary-deep">神</span>になる。
             </h2>
             <p className="reveal mt-6 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg">
-              私たち LimeNote 株式会社は、「やさしいインターネット」を信じています。
               <br />
-              声の大きい人だけが目立つ場所ではなく、誰かの小さな一言が、誰かの一日を救う場所を。
-              そんな世界を、テクノロジーとデザインで丁寧につくっています。
             </p>
             <dl className="reveal mt-8 space-y-3 text-sm">
               <div className="flex gap-4">

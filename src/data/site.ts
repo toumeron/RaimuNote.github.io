@@ -13,17 +13,17 @@ export const news: NewsItem[] = [
   {
     date: "2026.03.30",
     category: "新機能",
-    title: "「ライムボード」をリリース。気になるノートを集めて共有できます",
+    title: "追加予定",
   },
   {
     date: "2026.03.05",
     category: "イベント",
-    title: "年次ユーザーミートアップ「Lime Fes 2026」開催決定",
+    title: "Lime2026を開催しました。",
   },
   {
     date: "2026.02.14",
     category: "メディア",
-    title: "代表インタビューが日経クロストレンドに掲載されました",
+    title: "福岡県にて寝ました",
   },
 ];
 

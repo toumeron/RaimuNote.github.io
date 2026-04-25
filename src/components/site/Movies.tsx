@@ -24,7 +24,7 @@ export const Movies = () => {
             </h2>
           </div>
           <p className="reveal max-w-sm text-background/70">
-            プロモーションムービーやクリエイターインタビューなど、
+            プロモーションムービーで
             ライムノートの世界観を映像でお届けします。
           </p>
         </div>
