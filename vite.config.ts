@@ -3,10 +3,9 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // リポジトリ名が [ユーザー名].github.io の場合は、ルートディレクトリ "/" を指定します
-  base: "/",
+  // GitHub Pagesのサブディレクトリ名を指定
+  base: "/RaimuNote.github.io/",
 
   server: {
     host: "::",
