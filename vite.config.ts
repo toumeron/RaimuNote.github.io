@@ -5,9 +5,8 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // GitHub Pages用のベースパス設定
-  // リポジトリ名が RaimuNote.github.io なので、末尾にスラッシュを入れて指定します
-  base: "/RaimuNote.github.io/",
+  // リポジトリ名が [ユーザー名].github.io の場合は、ルートディレクトリ "/" を指定します
+  base: "/",
 
   server: {
     host: "::",
@@ -22,7 +21,6 @@ export default defineConfig(({ mode }) => ({
 
   resolve: {
     alias: {
-      // shadcn/uiなどが使用する "@" パスの解決設定
       "@": path.resolve(__dirname, "./src"),
     },
   },
