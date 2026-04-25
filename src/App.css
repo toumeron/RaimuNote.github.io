@@ -1,0 +1,60 @@
+/* --- 1. Tailwindを起動させる（これがないと色はつきません） --- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- 2. LimeNoteの色と余白の定義（これがないと青くなります） --- */
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 71% 4%;
+    --primary: 74 100% 62%; /* ライムグリーン */
+    --primary-foreground: 224 71% 4%;
+    --card: 0 0% 100%;
+    --border: 220 13% 91%;
+    --radius: 1rem;
+  }
+}
+
+/* --- 3. あなたが「引き継ぎたい」と言ったコード（問題箇所のみ修正） --- */
+#root {
+  /* デザイン崩壊の主犯である text-align: center と max-width は
+     LimeNoteのデザインを優先するために無効化（コメントアウト）を推奨します */
+  /* text-align: center; */ 
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

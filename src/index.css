@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LimeNote Design System
+   All colors MUST be HSL.
+   Brand: Lime green × White × Dark grey, with playful sticker accents. */
+
+@layer base {
+  :root {
+    /* Brand */
+    --background: 60 33% 98%;          /* off-white */
+    --foreground: 160 12% 14%;         /* dark grey */
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 12% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 12% 14%;
+
+    --primary: 72 95% 47%;             /* lime */
+    --primary-foreground: 160 18% 12%;
+
+    --primary-glow: 72 100% 65%;       /* lighter lime */
+    --primary-deep: 80 70% 35%;        /* deep lime */
+
+    --secondary: 72 60% 92%;           /* pale lime tint */
+    --secondary-foreground: 160 18% 14%;
+
+    --muted: 60 20% 95%;
+    --muted-foreground: 160 6% 40%;
+
+    --accent: 72 95% 47%;
+    --accent-foreground: 160 18% 12%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 60 12% 88%;
+    --input: 60 12% 88%;
+    --ring: 72 95% 47%;
+
+    --radius: 1rem;
+
+    /* Effects */
+    --gradient-lime: linear-gradient(135deg, hsl(72 95% 55%), hsl(80 100% 70%));
+    --gradient-soft: linear-gradient(180deg, hsl(72 60% 96%), hsl(60 33% 98%));
+    --shadow-sticker:
+      0 0 0 4px hsl(0 0% 100%),
+      0 14px 30px -12px hsl(160 30% 20% / 0.25),
+      0 4px 8px -4px hsl(160 30% 20% / 0.15);
+    --shadow-soft: 0 18px 40px -20px hsl(160 30% 20% / 0.25);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 160 18% 8%;
+    --foreground: 60 33% 98%;
+    --card: 160 18% 10%;
+    --card-foreground: 60 33% 98%;
+    --popover: 160 18% 10%;
+    --popover-foreground: 60 33% 98%;
+    --primary: 72 95% 55%;
+    --primary-foreground: 160 18% 10%;
+    --secondary: 160 14% 16%;
+    --secondary-foreground: 60 33% 98%;
+    --muted: 160 14% 16%;
+    --muted-foreground: 60 10% 70%;
+    --accent: 72 95% 55%;
+    --accent-foreground: 160 18% 10%;
+    --destructive: 0 62.8% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 160 14% 18%;
+    --input: 160 14% 18%;
+    --ring: 72 95% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Noto Sans JP", system-ui, -apple-system, sans-serif;
+    font-feature-settings: "palt";
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection {
+    background: hsl(var(--primary) / 0.4);
+    color: hsl(var(--foreground));
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Archivo Black", "Noto Sans JP", sans-serif;
+    letter-spacing: -0.02em;
+  }
+  .font-jp-black {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.01em;
+  }
+
+  .bg-dot-lime {
+    background-image: radial-gradient(hsl(var(--primary) / 0.35) 1.2px, transparent 1.2px);
+    background-size: 18px 18px;
+  }
+  .bg-grid-soft {
+    background-image:
+      linear-gradient(hsl(var(--foreground) / 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--foreground) / 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+  .gradient-lime {
+    background: var(--gradient-lime);
+  }
+  .gradient-soft {
+    background: var(--gradient-soft);
+  }
+  .shadow-sticker {
+    box-shadow: var(--shadow-sticker);
+  }
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  /* Sticker tag (watanare-inspired tilted speech bubble) */
+  .sticker {
+    @apply relative inline-flex items-center bg-white text-foreground rounded-full px-4 py-1.5 text-sm font-bold;
+    box-shadow: var(--shadow-sticker);
+  }
+
+  .writing-vertical {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+
+  .clip-blob {
+    clip-path: path("M 0 80 Q 0 0 80 0 L 1200 0 Q 1280 0 1280 80 L 1280 320 Q 1280 400 1200 400 L 80 400 Q 0 400 0 320 Z");
+  }
+
+  /* Reveal on scroll */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
